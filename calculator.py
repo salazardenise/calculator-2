@@ -14,24 +14,31 @@ def convertable(tokens):
             return True
         except ValueError:
             print("OOps! That was no valid number. Try again please")
-    if len(tokens) == 2:
+            return False
+    elif len(tokens) == 2:
         try:
             int(tokens[1])
+            return True
            
         except ValueError:
             print("OOps! That was no valid number. Try again please")
+            return False
+    else:
+        print("Not enough arguments .")
+        return False    
 
 
 # Your code goes here
 while True: 
     stir = input("> ")
     tokens = stir.split(" ")
+    legit = convertable(tokens)
     if tokens[0] == "q":
         break
     else:
 
 
-        if len(tokens) == 3:
+        if len(tokens) == 3 and legit:
             num1 = int(tokens[1])
             num2 = int(tokens[2])
             if tokens[0] == "+" :
@@ -49,7 +56,7 @@ while True:
             else: 
                 print ("Don't understand. Try again please.")
 
-        elif len(tokens) == 2:
+        elif len(tokens) == 2 and legit:
             num1 = int(tokens[1])
             if tokens[0] == "square":
                 print(square(num1))
@@ -61,26 +68,3 @@ while True:
         else: 
             print ("Don't understand. Try again please.")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-"""
-# No setup
-repeat forever:
-    read input
-    tokenize input
-    if the first token is "q":
-        quit
-    else:
-        decide which math function to call based on first token
-"""
