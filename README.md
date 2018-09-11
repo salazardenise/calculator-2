@@ -1,8 +1,8 @@
 # Calculator 2 Hackbright Exercise
 
 This directory contains two files:
--calculator.py
--arithmetic.py
+- calculator.py
+- arithmetic.py
 
 arithmetic.py was provided by Hackbright and calculator.py was modified to include arithmetic functions to be used by calculator.py.
 
