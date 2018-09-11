@@ -33,7 +33,7 @@ while True:
     stir = input("> ")
     tokens = stir.split(" ")
     
-    if tokens[0] == "q":
+    if tokens[0].lower() == "q" or tokens[0].lower() == "quit":
         break
     else:
         legit = convertable(tokens)
