@@ -13,7 +13,7 @@ def convertable(tokens):
             int(tokens[2])
             return True
         except ValueError:
-            print("OOps! That was no valid number. Try again please")
+            print("Oops! That was not a valid number.")
             return False
     elif len(tokens) == 2:
         try:
@@ -21,10 +21,10 @@ def convertable(tokens):
             return True
            
         except ValueError:
-            print("OOps! That was no valid number. Try again please")
+            print("Oops! That was not a valid number.")
             return False
     else:
-        print("Not enough arguments .")
+        print("Not enough arguments.")
         return False    
 
 
@@ -32,12 +32,11 @@ def convertable(tokens):
 while True: 
     stir = input("> ")
     tokens = stir.split(" ")
-    legit = convertable(tokens)
+    
     if tokens[0] == "q":
         break
     else:
-
-
+        legit = convertable(tokens)
         if len(tokens) == 3 and legit:
             num1 = int(tokens[1])
             num2 = int(tokens[2])
