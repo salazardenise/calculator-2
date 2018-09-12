@@ -4,7 +4,7 @@ This directory contains two files:
 - calculator.py
 - arithmetic.py
 
-calculator.py was provided by Hackbright and arithmetic.py was modified to continuously prompt the user for prefix math expressions.
+arithemtic.py was provided by Hackbright and calculator.py was modified to continuously prompt the user for prefix math expressions.
 
 ## How To Use
 ```
